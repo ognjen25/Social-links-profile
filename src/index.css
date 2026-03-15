@@ -1,0 +1,45 @@
+/* ALL imports must be at the top */
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@theme {
+    --color-link-col: hsl(228, 45%, 44%);
+    --color-grey-900: #141414;
+    --color-grey-800: #1F1F1F;
+    --color-grey-700: #333333;
+    --color-green: #C4F82A;
+
+    --spacing-500: 40px;
+    --spacing-300: 24px;
+    --spacing-200: 16px;
+    --spacing-150: 12px;
+    --spacing-100: 8px;
+    --spacing-50: 4px;
+
+    --font-display: "Inter", sans-serif;
+}
+
+@layer base {
+    body {
+        @apply min-h-screen bg-grey-900 text-white font-display antialiased flex items-center justify-center;
+        margin: 0;
+    }
+
+    img {
+        @apply block w-full;
+    }
+}
+
+@layer components {
+    .text_preset_1 {
+        @apply text-[24px] leading-[150%] tracking-[0px];
+    }
+
+    .text_preset_2 {
+        @apply text-[14px] leading-[150%] tracking-[0px];
+    }
+
+    .text_preset_2_bold {
+        @apply text-[14px] leading-[150%] tracking-[0px] font-bold;
+    }
+}
