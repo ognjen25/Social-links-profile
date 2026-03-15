@@ -3,7 +3,7 @@ function App() {
   return (
     <section class="bg-grey-800 min-h-144.75 max-w-72 m-auto p-spacing-300 flex gap-spacing-300 flex-col place-items-center">
       
-      <img class="max-w-22 rounded-full" src="/src/assets/images/avatar-jessica.jpeg" alt="avatar_pic"
+      <img class="max-w-22 rounded-full" src="./src/assets/images/avatar-jessica.jpeg" alt="avatar_pic"
         loading="lazy" />
       
       <div class="text-center w-full">
