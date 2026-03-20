@@ -1,4 +1,3 @@
-/* ALL imports must be at the top */
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
@@ -31,15 +30,31 @@
 }
 
 @layer components {
-    .text_preset_1 {
-        @apply text-[24px] leading-[150%] tracking-[0px];
+
+    .text_preset_1,
+    .text_preset_2,
+    .text_preset_2_bold{
+        @apply leading-[150%] tracking-[0px];
     }
 
-    .text_preset_2 {
-        @apply text-[14px] leading-[150%] tracking-[0px];
+    .text_preset_1 {
+        @apply text-[24px];
+    }
+
+    .text_preset_2,
+    .text_preset_2_bold{
+        @apply text-[14px];
     }
 
     .text_preset_2_bold {
-        @apply text-[14px] leading-[150%] tracking-[0px] font-bold;
+        @apply font-bold;
+    }
+
+    .list_elements{
+        @apply bg-grey-700 w-full p-150 rounded-lg my-200
+    }
+
+    .list_elements:hover{
+        @apply cursor-pointer bg-green text-grey-700;
     }
 }
